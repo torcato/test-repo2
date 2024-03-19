@@ -1,0 +1,4 @@
+raw: 0.9
+publishUrl: validation-error
+enabled: true
+prefixWithBranchName: false

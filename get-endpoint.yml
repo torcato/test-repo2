@@ -1,0 +1,11 @@
+raw: 0.9
+endpoint: GET
+metadata:
+  title: Simple Get
+  description: Hello World get!
+code: snapi
+codeFile: error.snapi
+format: json
+computeClass: normal
+computeLimitSeconds: 30
+enabled: true
