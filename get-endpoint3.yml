@@ -1,0 +1,14 @@
+raw: 0.9
+endpoint: GET
+metadata:
+  title: fifa Get
+  description: country fifa get
+  tags:
+    - test
+code: snapi
+codeFile: ok.snapi
+format: json
+computeClass: normal
+declaration: does_not_exist
+computeLimitSeconds: 30
+enabled: true
