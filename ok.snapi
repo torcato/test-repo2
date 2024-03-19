@@ -1,0 +1,19 @@
+country_codes() =
+    [
+        {FIFA: "AFG", unofficial: "un1", official_name_en: "Afghanistan1"},
+        {FIFA: "AFG", unofficial: "un2", official_name_en: "Afghanistan2"},
+        {FIFA: "ALB", unofficial: "un3", official_name_en: "Albania1"},
+        {FIFA: "ALB", unofficial: "un4", official_name_en: "Albania2"},
+        {FIFA: "ALG", unofficial: "un5", official_name_en: "Algeria1"},
+        {FIFA: "ALG", unofficial: "un6", official_name_en: "Algeria2"}
+    ]
+
+country_english_name(country_fifa_name: string, unofficial_name: string) =
+    List.Transform(
+        List.Filter(
+            country_codes(),
+            (x) ->
+                x.FIFA == country_fifa_name and x.unofficial == unofficial_name
+        ),
+        (x) -> x.official_name_en
+    )
